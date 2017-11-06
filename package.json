@@ -4,6 +4,7 @@
   "description": "Filter out a list of sensitive words",
   "main": "build/index.js",
   "scripts": {
+    "dev": "watch 'npm run build' src",
     "build": "babel src -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -30,6 +31,7 @@
   "homepage": "https://github.com/futantan/ftt-sensitive-words#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-latest": "^6.24.1"
+    "babel-preset-latest": "^6.24.1",
+    "watch": "^1.0.2"
   }
 }
